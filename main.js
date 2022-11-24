@@ -2,6 +2,14 @@ import './style.css';
 import javascriptLogo from './javascript.svg';
 import { environmentsComponent } from './src/concepts/01-environments';
 import { callbacksComponent } from './src/concepts/02-callbacks';
+import { promiseComponent } from './src/concepts/03-promises';
+import { promiseRaceComponent } from './src/concepts/04-promise-race';
+import { asyncComponent } from './src/concepts/05-async';
+import { asyncAwaitComponent } from './src/concepts/06-async-await';
+import { asyncAwait2Component } from './src/concepts/07-async-await';
+import { forAwaitComponent } from './src/concepts/08-for-await';
+import { generatorFunctionsComponent } from './src/concepts/09-generators';
+import { generatorsAsyncComponent } from './src/concepts/10-generators-async';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -24,5 +32,12 @@ const element = document.querySelector('.card');
 
 
 // environmentsComponent( element );
-callbacksComponent( element );
-
+// callbacksComponent( element );
+// promiseComponent(element);
+// promiseRaceComponent(element);
+// asyncComponent(element);
+// asyncAwaitComponent(element);
+// asyncAwait2Component(element);
+// forAwaitComponent(element);
+// generatorFunctionsComponent(element);
+generatorsAsyncComponent(element);
